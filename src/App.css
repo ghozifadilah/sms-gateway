@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'SonySketch';
+  src: url('./static/Sony_Sketch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.judul-kartu {
+  color: #939ba2;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.text-sony {
+  font-family: 'SonySketch', sans-serif;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* src/ProgressTracker.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-tracker {
+  margin-top: 20px;
+}
+
+.progress-tracker h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.progress-tracker .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-tracker .details button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress-tracker .details button:focus {
+  outline: none;
+}
+
+.progress-tracker .details button:hover {
+  background-color: #0056b3;
+}
+
+.progress-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar div {
+  flex-grow: 1;
+  height: 5px;
+  background-color: #eee;
+  margin: 0 5px;
+  position: relative;
+}
+
+.progress-bar div:first-child {
+  margin-left: 0;
+}
+
+.progress-bar div:last-child {
+  margin-right: 0;
+}
+
+.progress-bar div::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress-bar .completed div::before {
+  background-color: #28a745;
+}
+
+/* Login CSS */
+.loginForm{
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.loginTextTitle{
+  color:#ffffff;
+  font-weight: 760;
+}
+
+.titleForm{
+  font-weight: 700;
+}
+
+
+.LoginFormInside{
+  padding:25px;
+  
+}
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  /* background-image: url('./static/alat.png'); */
+  background-color: #101726;
+  background-size: cover;
+  background-position: center center;
+}
+
+.buttonLogin{
+  width: 100%;
+  border-radius: 15px 15px 15px 15px !important;
+  background-color: #0056D3 !important;
+}
+
+/* End Login CSS */
